@@ -1,0 +1,1311 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   MAIN HERO
+========================= */
+
+.main {
+    width: 100%;
+    min-height: 103vh;
+
+    background-image: url("netflix-images/netflix-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+
+/* Dark overlay */
+
+.main .box {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0.59;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   TOP OFFER BAR
+========================= */
+
+.nav-button {
+    width: 100%;
+    min-height: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+            #0066ff,
+            #d64cff,
+            #ff1744);
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: white;
+    text-align: center;
+
+    padding: 5px 15px;
+
+    cursor: pointer;
+}
+
+.bi-gift {
+    color: white;
+    font-size: 18px;
+    margin-right: 9px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: min(1200px, 90vw);
+    height: 62px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+nav img {
+    width: 145px;
+    height: auto;
+
+    margin-top: 96px;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 96px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    font-family: Martel Sans, sans-serif;
+
+    padding: 5px 15px;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid grey;
+
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+    border: 1px solid red;
+
+    padding: 5px 15px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+
+    border: 1px solid red;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 10px 27px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 100%;
+
+    min-height: calc(103vh - 62px);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+
+/* Unlimited movies */
+
+.hero> :first-child,
+.hero> :nth-child(2) {
+
+    font-family: Martel Sans, sans-serif;
+
+    font-weight: 900;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* Plans */
+
+.hero> :nth-child(3) {
+
+    font-family: Martel Sans, sans-serif;
+
+    font-weight: 600;
+
+    font-size: clamp(16px, 2vw, 20px);
+
+    margin-top: 18px;
+
+    text-align: center;
+}
+
+
+/* Ready to watch */
+
+.hero> :nth-child(4) {
+
+    font-family: Martel Sans, sans-serif;
+
+    font-size: 16px;
+
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+
+/* Email + button */
+
+.hero-buttons {
+    width: min(700px, 100%);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.hero-buttons input {
+    flex: 1;
+
+    min-width: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    border: 1px solid grey;
+
+    outline: none;
+}
+
+.hero-buttons input::placeholder {
+    color: #cfcfcf;
+}
+
+
+/* Terms */
+
+.hero> :nth-child(6) {
+
+    font-family: Martel Sans, sans-serif;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   SEPARATION
+========================= */
+
+.sepearation-line {
+    width: 100%;
+    height: 5px;
+
+    background-color: #333;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   TRENDING
+========================= */
+
+.first {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.trending-title {
+    width: min(1235px, 90vw);
+
+    margin: 30px auto 0;
+
+    font-family: Poppins, sans-serif;
+
+    font-weight: 500;
+
+    font-size: 26px;
+
+    color: white;
+}
+
+
+/* Cards container */
+
+.cards {
+    width: min(1235px, 90vw);
+
+    height: 278px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 44px;
+
+    align-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 15px 30px;
+
+    scrollbar-width: thin;
+}
+
+
+/* Individual card */
+
+.item {
+    width: 175px;
+    height: 250px;
+
+    flex: 0 0 175px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+/* Images */
+
+.item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+
+/* Number */
+
+.item span {
+    position: absolute;
+
+    left: -25px;
+    bottom: 5px;
+
+    color: black;
+
+    -webkit-text-stroke: 2px white;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 90px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   MORE REASONS
+========================= */
+
+.second {
+    width: 100%;
+}
+
+.reasons-title {
+    width: min(1235px, 90vw);
+
+    margin: 35px auto 20px;
+
+    color: white;
+
+    font-family: Poppins, sans-serif;
+
+    font-weight: 600;
+
+    font-size: 24px;
+}
+
+
+/* Information cards */
+
+.informations {
+
+    width: min(1235px, 90vw);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 19px;
+}
+
+
+/* All four cards */
+
+.tv,
+.download,
+.search,
+.file {
+
+    min-width: 0;
+
+    min-height: 292px;
+
+    border-radius: 18px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 99.08%);
+}
+
+
+/* Card headings */
+
+.tv h2,
+.download h2,
+.search h2,
+.file h2 {
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    margin: 23px;
+}
+
+
+/* Card paragraphs */
+
+.tv p,
+.download p,
+.search p,
+.file p {
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin: 23px;
+
+    color: #d5d5d5;
+}
+
+
+/* =========================
+   CARD ICONS
+========================= */
+
+.M,
+.D,
+.S,
+.F {
+
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    margin: 0;
+
+    width: 78px;
+    height: 68px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 30px rgba(255, 70, 160, 0.8));
+}
+
+.F {
+    width: 87px;
+    height: 71px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+.faq h2 {
+
+    width: min(1235px, 90vw);
+
+    margin: 0 auto 20px;
+
+    color: white;
+
+    font-family: Poppins, sans-serif;
+
+    font-weight: 700;
+
+    font-size: 24px;
+}
+
+
+/* FAQ box */
+
+.faqbox {
+
+    width: min(1235px, 90vw);
+
+    min-height: 73px;
+
+    margin: 0 auto 9px;
+
+    padding: 15px 20px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    cursor: pointer;
+}
+
+.faqbox svg {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   THIRD SECTION
+========================= */
+
+.third {
+
+    width: min(1235px, 90vw);
+
+    margin: 60px auto 0;
+
+    text-align: center;
+}
+
+.third h5 {
+
+    color: white;
+
+    font-family: Poppins, sans-serif;
+
+    font-weight: 400;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Email */
+
+.new-member {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    margin: 20px auto;
+}
+
+.third input {
+
+    width: min(542px, 100%);
+
+    background-color: transparent;
+
+    border: 1px solid grey;
+
+    border-radius: 7px;
+
+    padding: 12px;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.third input::placeholder {
+    color: #cfcfcf;
+}
+
+
+/* Offer text */
+
+.third p {
+
+    color: rgb(185, 198, 198);
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 25px 0 0;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    width: min(1235px, 90vw);
+
+    margin: 60px auto 30px;
+
+    color: rgb(185, 198, 198);
+
+    font-family: Poppins, sans-serif;
+}
+
+
+/* Question */
+
+footer>span {
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+}
+
+
+/* Footer columns */
+
+.footer-links {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.footer-column a {
+
+    color: rgb(185, 198, 198);
+
+    font-size: 13px;
+
+    text-decoration: underline;
+}
+
+
+/* Language */
+
+.language {
+
+    padding: 7px 30px;
+
+    margin-bottom: 15px;
+
+    background-color: transparent;
+
+    color: white;
+
+    font-size: 14px;
+
+    border: 1px solid grey;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+/* Netflix India */
+
+footer .second-last {
+
+    color: rgb(185, 198, 198);
+
+    font-size: 13px;
+
+    margin: 5px 0 15px;
+}
+
+
+/* Recaptcha */
+
+footer .last {
+
+    font-family: sans-serif;
+
+    color: rgb(130, 134, 134);
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        width: 90vw;
+    }
+
+    nav img {
+        width: 120px;
+    }
+
+
+    /* Trending */
+
+    .cards {
+        gap: 25px;
+    }
+
+    .item {
+        width: 160px;
+        height: 230px;
+
+        flex-basis: 160px;
+    }
+
+
+    /* Reasons */
+
+    .informations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Footer */
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* =====================
+       MAIN
+    ===================== */
+
+    .main {
+        min-height: 90vh;
+
+        background-position: center;
+
+        background-size: cover;
+    }
+
+    .main .box {
+        height: 100%;
+    }
+
+
+    /* =====================
+       OFFER BAR
+    ===================== */
+
+    .nav-button {
+
+        min-height: 38px;
+
+        font-size: 12px;
+
+        padding: 6px 10px;
+
+        line-height: 1.3;
+    }
+
+    .bi-gift {
+        font-size: 15px;
+
+        margin-right: 5px;
+    }
+
+
+    /* =====================
+       NAV
+    ===================== */
+
+    nav {
+
+        width: 90vw;
+
+        height: 55px;
+    }
+
+    nav img {
+
+        width: 90px;
+
+        margin-top: 15px;
+    }
+
+    nav>div {
+
+        gap: 5px;
+    }
+
+    nav .btn {
+
+        font-size: 11px;
+
+        padding: 5px 9px;
+    }
+
+
+    /* =====================
+       HERO
+    ===================== */
+
+    .hero {
+
+        min-height: calc(90vh - 55px);
+
+        padding: 30px 20px;
+
+        justify-content: center;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+
+        font-size: 32px;
+
+        line-height: 1.15;
+    }
+
+    .hero> :nth-child(3) {
+
+        font-size: 16px;
+
+        margin-top: 15px;
+    }
+
+    .hero> :nth-child(4) {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        max-width: 350px;
+
+        margin-top: 15px;
+    }
+
+
+    /* Email */
+
+    .hero-buttons {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 15px;
+    }
+
+    .hero-buttons input {
+
+        width: 100%;
+
+        flex: none;
+
+        font-size: 16px;
+
+        padding: 12px;
+    }
+
+    .hero-buttons .btn-red {
+
+        width: 100%;
+
+        font-size: 17px;
+
+        padding: 11px;
+    }
+
+    .hero> :nth-child(6) {
+
+        font-size: 12px;
+
+        margin-top: 10px;
+    }
+
+
+    /* =====================
+       TRENDING
+    ===================== */
+
+    .trending-title {
+
+        width: 90vw;
+
+        font-size: 22px;
+
+        margin-top: 25px;
+    }
+
+    .cards {
+
+        width: 90vw;
+
+        height: 220px;
+
+        gap: 20px;
+
+        padding: 15px 20px;
+
+        margin: auto;
+    }
+
+    .item {
+
+        width: 130px;
+
+        height: 190px;
+
+        flex-basis: 130px;
+    }
+
+    .item span {
+
+        left: -18px;
+
+        bottom: 3px;
+
+        font-size: 65px;
+
+        -webkit-text-stroke: 1.5px white;
+    }
+
+
+    /* =====================
+       REASONS
+    ===================== */
+
+    .reasons-title {
+
+        width: 90vw;
+
+        font-size: 22px;
+
+        margin-top: 30px;
+    }
+
+    .informations {
+
+        width: 90vw;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .tv,
+    .download,
+    .search,
+    .file {
+
+        width: 100%;
+
+        min-height: 240px;
+    }
+
+    .tv h2,
+    .download h2,
+    .search h2,
+    .file h2 {
+
+        font-size: 20px;
+
+        margin: 20px;
+    }
+
+    .tv p,
+    .download p,
+    .search p,
+    .file p {
+
+        font-size: 13px;
+
+        margin: 20px;
+    }
+
+
+    /* Icons */
+
+    .M,
+    .D,
+    .S,
+    .F {
+
+        right: 20px;
+
+        bottom: 20px;
+
+        margin: 0;
+    }
+
+
+    /* ===================
+       FAQ
+    ===================== */
+
+    .faq {
+
+        margin-top: 40px;
+    }
+
+    .faq h2 {
+
+        width: 90vw;
+
+        font-size: 21px;
+
+        margin-bottom: 15px;
+    }
+
+    .faqbox {
+
+        width: 90vw;
+
+        min-height: 65px;
+
+        padding: 14px 15px;
+
+        font-size: 16px;
+
+        gap: 10px;
+    }
+
+    .faqbox svg {
+
+        width: 22px;
+
+        height: 22px;
+    }
+
+
+    /* =====================
+       THIRD SECTION
+    ===================== */
+
+    .third {
+
+        width: 90vw;
+
+        margin-top: 45px;
+    }
+
+    .third h5 {
+
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+    .new-member {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 15px;
+    }
+
+    .third input {
+
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+    .new-member .btn-red {
+
+        width: 100%;
+
+        font-size: 17px;
+    }
+
+    .third p {
+
+        margin: 20px 0 0;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =====================
+       FOOTER
+    ===================== */
+
+    footer {
+
+        width: 90vw;
+
+        margin-top: 50px;
+    }
+
+    footer>span {
+
+        margin-bottom: 25px;
+
+        font-size: 13px;
+    }
+
+    .footer-links {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px 20px;
+
+        margin-bottom: 25px;
+    }
+
+    .footer-column {
+
+        gap: 14px;
+    }
+
+    .footer-column a {
+
+        font-size: 12px;
+    }
+
+    .language {
+
+        font-size: 13px;
+
+        padding: 7px 25px;
+    }
+
+    footer .second-last {
+
+        font-size: 12px;
+    }
+
+    footer .last {
+
+        font-size: 10px;
+
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 380px) {
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+
+        font-size: 28px;
+    }
+
+    .item {
+
+        width: 115px;
+
+        height: 170px;
+
+        flex-basis: 115px;
+    }
+
+    .cards {
+
+        gap: 18px;
+    }
+
+    .item span {
+
+        font-size: 58px;
+
+        left: -16px;
+    }
+
+    .faqbox {
+
+        font-size: 14px;
+    }
+
+}
