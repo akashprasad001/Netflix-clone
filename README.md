@@ -48,7 +48,7 @@ The main goal of this project was to practice:
 
 ## 🌐 Live Demo
 
-Coming soon...
+https://akashprasad001.github.io/Netflix-clone/
 
 ## 📸 Preview
 
